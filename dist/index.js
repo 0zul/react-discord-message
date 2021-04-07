@@ -1523,7 +1523,8 @@ var VerifiedBotCheck = function VerifiedBotCheck(props) {
 function AuthorInfo(_ref) {
   var author = _ref.author,
       bot = _ref.bot,
-      roleColor = _ref.roleColor;
+      roleColor = _ref.roleColor,
+      verifiedBot = _ref.verifiedBot;
   return /*#__PURE__*/React__default['default'].createElement("span", {
     className: "discord-author-info"
   }, /*#__PURE__*/React__default['default'].createElement("span", {

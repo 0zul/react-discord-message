@@ -3,14 +3,14 @@ import PropTypes from 'prop-types'
 import './AuthorInfo.css'
 import VerifiedBotCheck from './VerifiedBotCheck'
 
-function AuthorInfo({ author, bot, roleColor }) {
+function AuthorInfo({ author, bot, roleColor, verifiedBot }) {
 	return (
 		<span className="discord-author-info">
 			<span style={{ color: roleColor }} className="discord-author-username">
 				{author}
 			</span>
 			{bot ? <span className="discord-bot-tag">Bot</span> : null}
-			{verifiedBot ? <span className="discord-verified-bot-tag">{ VerifiedBotCheck }BOT</span> : null}
+			{verifiedBot ? <span className="discord-verified-bot-tag">{VerifiedBotCheck}BOT</span> : null}
 		</span>
 	)
 }
