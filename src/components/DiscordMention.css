@@ -1,0 +1,40 @@
+.discord-message .discord-mention {
+	color: #7289da;
+	background-color: rgba(114, 137, 218, 0.1);
+	font-weight: 500;
+	padding: 0 1px;
+}
+
+.discord-message .discord-mention:hover {
+	color: #fff;
+	background-color: rgba(114, 137, 218, 0.7);
+}
+
+.discord-message.discord-highlight-mention {
+	background-color: rgba(250, 166, 26, 0.05);
+	position: relative;
+}
+
+.discord-message.discord-highlight-mention::before {
+	content: "";
+	background-color: #faa61a;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 2px;
+}
+
+.discord-message.discord-highlight-mention:hover {
+	background-color: rgba(250, 166, 26, 0.1);
+}
+
+.discord-message.discord-highlight-mention .discord-mention {
+	background-color: unset !important;
+}
+
+.discord-message.discord-highlight-mention .discord-mention:hover {
+	color: #7289da;
+	text-decoration: underline;
+}
