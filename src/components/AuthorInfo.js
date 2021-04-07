@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './AuthorInfo.css'
-import VerifiedBotCheck from './VerifiedBotCheck'
 
 function AuthorInfo({ author, bot, roleColor, verifiedBot }) {
 	return (
@@ -10,7 +9,7 @@ function AuthorInfo({ author, bot, roleColor, verifiedBot }) {
 				{author}
 			</span>
 			{bot ? <span className="discord-bot-tag">Bot</span> : null}
-			{verifiedBot ? <span className="discord-verified-bot-tag">{VerifiedBotCheck}BOT</span> : null}
+			{verifiedBot ? <span className="discord-verified-bot-tag">✓BOT</span> : null}
 		</span>
 	)
 }

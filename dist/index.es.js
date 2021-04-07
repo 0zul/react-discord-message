@@ -1477,40 +1477,8 @@ function _defineProperty(obj, key, value) {
   return obj;
 }
 
-var css$2 = ".discord-message .discord-author-info {\n\tcolor: #fff;\n\tdisplay: inline-flex;\n\talign-items: center;\n\tfont-size: 15px;\n}\n\n.discord-message .discord-author-info .discord-author-username {\n\tfont-size: 1.1em;\n\tfont-weight: 500;\n\tletter-spacing: 0.5px;\n}\n\n.discord-light-theme .discord-message .discord-author-info .discord-author-username {\n\tcolor: #23262a;\n}\n\n.discord-message .discord-author-info .discord-bot-tag {\n\tbackground-color: #7289da;\n\tfont-size: 0.65em;\n\tmargin-left: 5px;\n\tpadding: 3px;\n\tborder-radius: 3px;\n\tline-height: 100%;\n\ttext-transform: uppercase;\n}\n\n.discord-light-theme .discord-message .discord-author-info .discord-bot-tag {\n\tcolor: #fff;\n}\n\n\n.discord-compact-mode .discord-message .discord-author-info {\n\tdisplay: inline-flex;\n\tflex-direction: row-reverse;\n}\n\n.discord-compact-mode .discord-message .discord-author-info .discord-author-username {\n\tmargin-left: 4px;\n\tmargin-right: 4px;\n}\n\n.discord-compact-mode .discord-message .discord-author-info .discord-bot-tag {\n\tmargin-left: 0;\n\tmargin-right: 5px;\n\tpadding-left: 3px;\n\tpadding-right: 3px;\n\tfont-size: 0.6em;\n}\n";
+var css$2 = ".discord-message .discord-author-info {\n\tcolor: #fff;\n\tdisplay: inline-flex;\n\talign-items: center;\n\tfont-size: 15px;\n}\n\n.discord-message .discord-author-info .discord-author-username {\n\tfont-size: 1.1em;\n\tfont-weight: 500;\n\tletter-spacing: 0.5px;\n}\n\n.discord-light-theme .discord-message .discord-author-info .discord-author-username {\n\tcolor: #23262a;\n}\n\n.discord-message .discord-author-info .discord-bot-tag {\n\tbackground-color: #7289da;\n\tfont-size: 0.65em;\n\tmargin-left: 5px;\n\tpadding: 3px;\n\tborder-radius: 3px;\n\tline-height: 100%;\n\ttext-transform: uppercase;\n}\n\n.discord-light-theme .discord-message .discord-author-info .discord-bot-tag {\n\tcolor: #fff;\n}\n\n\n.discord-compact-mode .discord-message .discord-author-info {\n\tdisplay: inline-flex;\n\tflex-direction: row-reverse;\n}\n\n.discord-compact-mode .discord-message .discord-author-info .discord-author-username {\n\tmargin-left: 4px;\n\tmargin-right: 4px;\n}\n\n.discord-compact-mode .discord-message .discord-author-info .discord-bot-tag .discord-verified-bot-tag {\n\tmargin-left: 0;\n\tmargin-right: 5px;\n\tpadding-left: 3px;\n\tpadding-right: 3px;\n\tfont-size: 0.6em;\n}\n";
 styleInject(css$2);
-
-function _extends() {
-  _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
-}
-
-var VerifiedBotCheck = function VerifiedBotCheck(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends({
-    "aria-label": "Verified Bot",
-    className: "botTagVerified",
-    "aria-hidden": "false",
-    width: 16,
-    height: 16,
-    viewBox: "0 0 16 15.2"
-  }, props), /*#__PURE__*/React.createElement("path", {
-    d: "M7.4,11.17,4,8.62,5,7.26l2,1.53L10.64,4l1.36,1Z",
-    fill: "currentColor"
-  }));
-};
 
 function AuthorInfo(_ref) {
   var author = _ref.author,
@@ -1528,7 +1496,7 @@ function AuthorInfo(_ref) {
     className: "discord-bot-tag"
   }, "Bot") : null, verifiedBot ? /*#__PURE__*/React.createElement("span", {
     className: "discord-verified-bot-tag"
-  }, VerifiedBotCheck, "BOT") : null);
+  }, "\u2713BOT") : null);
 }
 
 AuthorInfo.propTypes = {

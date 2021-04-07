@@ -40,7 +40,7 @@
 	margin-right: 4px;
 }
 
-.discord-compact-mode .discord-message .discord-author-info .discord-bot-tag {
+.discord-compact-mode .discord-message .discord-author-info .discord-bot-tag .discord-verified-bot-tag {
 	margin-left: 0;
 	margin-right: 5px;
 	padding-left: 3px;
